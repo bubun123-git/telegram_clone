@@ -1,0 +1,43 @@
+/* SidebarThread.css */
+
+.sidebarThread {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebarThread:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+  }
+  
+  .sidebarThread_Avatar {
+    margin-right: 15px;
+  }
+  
+  .sidebarThread_Details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+    padding-bottom: 10px;
+  }
+  
+  .sidebarThread_Details h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333; /* Dark grey text */
+  }
+  
+  .sidebarThread_Details p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #999; /* Light grey text for message preview */
+  }
+  
+  .sidebarThread_Details small {
+    font-size: 12px;
+    color: #ccc; /* Even lighter grey for timestamp */
+  }
+  

@@ -1,0 +1,107 @@
+
+
+.thread {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5; 
+  }
+  
+  .thread_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .thread_headerDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: whitesmoke;
+  }
+  
+  .thread_headerDetails_avatar {
+    margin-right: 10px;
+  }
+  
+  .thread_headerDetails_info {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .thread_headerDetails h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .thread_headerDetails h5 {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .threadHeader_moreHoriz {
+    color: #757575; 
+  }
+  
+  .thread_message {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .thread_message .message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thread_message .message.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6; 
+  }
+  
+  .thread_input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .thread_inputForm {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .thread_inputField {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .thread_inputField:focus {
+    border-color: #66bb6a; 
+  }
+  
+  .thread_inputButton {
+    color: #757575; 
+  }
+  
+  .thread_inputButton:hover {
+    color: #66bb6a; 
+  }
+  
