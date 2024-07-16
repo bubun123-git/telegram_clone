@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import Login from './Component/Login';
-import Telegram from "../src/Component/Telegram"
-import { login, logout, selectUser } from "../src/Component/Features/userSlice"
-import {auth} from "../src/Firebase"
+import Login from './components/Login';
+import Telegram from './components/Telegram';
+import { login, logout, selectUser } from './features/counter/userSlice';
+import {auth} from './firebase'
 
 function App() {
 
