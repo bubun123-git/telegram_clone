@@ -1,10 +1,35 @@
-import "./App.css";
-import Telegram from "./Component/Telegram";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import './App.css';
+import Login from './Component/Login';
+import Telegram from "../src/Component/Telegram"
+import { login, logout, selectUser } from "../src/Component/Features/userSlice"
+import {auth} from "../src/Firebase"
 
 function App() {
+
+  const user = useSelector(selectUser)
+  const dispatch = useDispatch();
+
+  useEffect(() =>{
+    auth.onAuthStateChanged((authUser) =>{
+      if(authUser){
+        dispatch(login({
+          uid: authUser.uid,
+          photo: authUser.photoURL,
+          displayName: authUser.displayName,
+          email: authUser.email
+        }))
+      } else {
+        dispatch(logout())
+      }
+      console.log(authUser)
+    })
+  },[dispatch])
+
   return (
     <div className="App">
-      <Telegram />
+      {user ? <Telegram /> : <Login />}
     </div>
   );
 }
